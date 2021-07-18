@@ -1,5 +1,3 @@
-env.json
-
 # Logs
 logs
 *.log
@@ -43,6 +41,7 @@ build/Release
 node_modules/
 jspm_packages/
 qrcodes/
+qrcodes.*
 data/
 config/env/env.json
 
