@@ -6,12 +6,12 @@ A REST API for unlock project.
 * Configured MongoDB Server (can use MongoDB Atlas Cloud)
 
 ### Configuration
-1. Setup `NODE_ENV` to `development` or `production` (default is `production`)
+1. Set `NODE_ENV` to `development` or `production` (default is `production`)
    
 	```bash
    export NODE_ENV="production | development"
    ```
-1. setup `MONGODB_CONNECTION`
+1. Set `MONGODB_CONNECTION`
  
    ```bash
    export MONGODB_CONNECTION="<connection_url>"
