@@ -172,6 +172,7 @@ if (process.env.NODE_ENV && process.env.NODE_ENV == "development") {
       branch: student.branch,
       year: student.year,
       semester: student.semester,
+      developed_by: "https://pruthvipatel.com",
     };
     QRCode.toDataURL(JSON.stringify(data), { version: 10 }, function (
       err,
