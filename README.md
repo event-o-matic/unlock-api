@@ -6,12 +6,12 @@ A REST API for unlock project.
 * Configured MongoDB Server (can use MongoDB Atlas Cloud)
 
 ### Configuration
-1. Setup `NODE_ENV` to `development` or `production` (default is `production`)
+1. Set `NODE_ENV` to `development` or `production` (default is `production`)
    
 	```bash
    export NODE_ENV="production | development"
    ```
-1. setup `MONGODB_CONNECTION`
+1. Set `MONGODB_CONNECTION`
  
    ```bash
    export MONGODB_CONNECTION="<connection_url>"
@@ -47,7 +47,7 @@ npm run dev
 
 ## Generate QRCodes
 ### For all students
-1. Make sure student data is available in database (you can do so by a simple GET request)
+1. Make sure student data is available in database (you can do so by a simple `GET` request)
    
    ```api
 	GET /v1/students
@@ -62,7 +62,7 @@ npm run dev
 	e.g. For a student with an ID of `17103487` who is enrolled in `SET` school, the QR code will be stored at `/qrcodes/SET/17103487.png`.
 
 ### For single students
-1. Make sure student data is available in database (you can do so by a simple GET request)
+1. Make sure student data is available in database (you can do so by a simple `GET` request)
    
    ```api
 	GET /v1/students/:id
@@ -72,8 +72,10 @@ npm run dev
    ```api
 	POST /v1/generateQRCodes/:id
 	```
-	**WARNING:** These calls will over-ride the existing QRCodes.
+	**WARNING:** This will over-ride the existing QRCodes!
 
 
 ## TODO:
-* [ ] Make API Reference
+* [ ] Add authentication to the API calls.
+* [ ] Email Integration - QR Code should be sent by email directly (Also give option for HTML template).
+* [ ] Make API reference
