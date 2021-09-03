@@ -76,6 +76,8 @@ npm run dev
 
 
 ## TODO:
+* [ ] Feat: Generate QRCode from CSV file
 * [ ] Add authentication to the API calls.
 * [ ] Email Integration - QR Code should be sent by email directly (Also give option for HTML template).
 * [ ] Make API reference
+
